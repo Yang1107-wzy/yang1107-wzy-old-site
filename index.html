@@ -3,102 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhengyang Wang - HKUST</title>
+    <title>Zhengyang Wang | BNBU</title>
     <style>
         :root { --primary: #1a1a2e; --accent: #0f3460; --link: #1652f0; --bg: #fafafa; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; color: var(--primary); background: var(--bg); line-height: 1.7; }
         .container { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
-        header { margin-bottom: 32px; }
+        header { margin-bottom: 32px; display: flex; gap: 28px; align-items: flex-start; }
+        .header-text { flex: 1; }
         h1 { font-size: 2em; font-weight: 700; margin-bottom: 4px; }
-        .affiliation { font-size: 1.05em; color: #555; margin-bottom: 12px; }
-        .links a { color: var(--link); text-decoration: none; margin-right: 16px; font-size: 0.95em; }
+        .affiliation { font-size: 1.05em; color: #555; margin-bottom: 10px; }
+        .links a { color: var(--link); text-decoration: none; margin-right: 14px; font-size: 0.95em; }
         .links a:hover { text-decoration: underline; }
         section { margin-bottom: 28px; }
         h2 { font-size: 1.25em; font-weight: 600; border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin-bottom: 12px; color: var(--accent); }
         ul { padding-left: 20px; }
         li { margin-bottom: 6px; }
-        .paper { margin-bottom: 14px; }
-        .paper-title { font-weight: 600; }
-        .paper-authors { font-size: 0.93em; color: #555; }
-        .paper-venue { font-style: italic; color: #777; }
+        .project { margin-bottom: 16px; }
+        .project-title { font-weight: 600; margin-bottom: 2px; }
+        .project-meta { font-size: 0.93em; color: #555; margin-bottom: 4px; }
+        .project-desc { font-size: 0.95em; color: #444; }
         .edu-item { margin-bottom: 10px; }
         .edu-school { font-weight: 600; }
         .edu-detail { color: #555; font-size: 0.95em; }
+        .edu-courses { font-size: 0.9em; color: #777; margin-top: 2px; }
         footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.85em; color: #999; text-align: center; }
+        @media (max-width: 600px) { header { flex-direction: column; } }
     </style>
 </head>
 <body>
 <div class="container">
 
     <header>
-        <h1>Zhengyang Wang</h1>
-        <p class="affiliation">Undergraduate Student, Department of Computer Science<br>Hong Kong University of Science and Technology (HKUST)</p>
-        <div class="links">
-            <a href="https://github.com/Yang1107-wzy" target="_blank">GitHub</a>
-            <a href="mailto:ywang1107@connect.ust.hk">Email</a>
-            <a href="https://openreview.net/profile" target="_blank">OpenReview</a>
+        <div class="header-text">
+            <h1>Zhengyang Wang</h1>
+            <p class="affiliation">
+                Undergraduate, Computer Science and Technology<br>
+                Beijing Normal University &ndash; Hong Kong Baptist University United International College (BNBU)
+            </p>
+            <div class="links">
+                <a href="mailto:1658652500@qq.com">Email</a>
+                <a href="https://github.com/Yang1107-wzy" target="_blank">GitHub</a>
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            </div>
         </div>
     </header>
 
     <section>
         <h2>About Me</h2>
-        <p>I am an undergraduate student majoring in Computer Science at HKUST. My research interests span <strong>medical image analysis</strong>, <strong>computer vision</strong>, and <strong>deep learning</strong>, with a focus on 3D/4D segmentation, indoor localization, and multi-modal sensing.</p>
+        <p>I am an undergraduate student at BNBU majoring in Computer Science and Technology (GPA: 3.25/4.00). My research interests lie in <strong>deep learning</strong>, <strong>3D/4D medical image analysis</strong>, <strong>computer vision</strong>, and <strong>ML for remote sensing</strong>. I have been involved in projects spanning cardiac MRI segmentation, indoor localization, flood forecasting, and sports motion analysis.</p>
     </section>
 
     <section>
         <h2>Education</h2>
         <div class="edu-item">
-            <div class="edu-school">BEng in Computer Science</div>
-            <div class="edu-detail">Hong Kong University of Science and Technology &mdash; 2023&ndash;Present</div>
+            <div class="edu-school">BSc in Computer Science and Technology</div>
+            <div class="edu-detail">Beijing Normal University &ndash; Hong Kong Baptist University UIC (BNBU) &mdash; Sept 2023 &ndash; Present</div>
+            <div class="edu-courses">Key courses: Data Structures &amp; Algorithms (B+), Operating Systems (B+), Database Systems (B+), Machine Learning (B+), Neural Networks &amp; Deep Learning (B+), Deep Learning for Computer Vision, 3D Computer Vision</div>
         </div>
     </section>
 
     <section>
         <h2>Research Interests</h2>
         <ul>
-            <li>3D/4D Medical Image Segmentation (Cardiac MRI)</li>
-            <li>Indoor Localization (BLE + LLM)</li>
-            <li>RGB-D Height Estimation (Mobile Deployment)</li>
-            <li>Time Series Forecasting (Hydrological Modeling)</li>
-            <li>Computer Vision for Action Analysis</li>
+            <li>3D/4D Medical Image Segmentation</li>
+            <li>Computer Vision &amp; 3D Vision</li>
+            <li>Deep Learning &amp; Generative AI</li>
+            <li>Indoor Localization &amp; Multi-modal Sensing</li>
+            <li>ML for Remote Sensing &amp; Hydrological Forecasting</li>
+            <li>Motion Process Recognition &amp; Sports Analytics</li>
         </ul>
     </section>
 
     <section>
         <h2>Publications</h2>
-        <div class="paper">
-            <div class="paper-title">Your Paper Title Here</div>
-            <div class="paper-authors">Zhengyang Wang, Co-author Names</div>
-            <div class="paper-venue">Conference/Journal Name, Year</div>
-        </div>
-        <!-- Add more papers as needed:
-        <div class="paper">
-            <div class="paper-title">Another Paper Title</div>
-            <div class="paper-authors">Author1, Zhengyang Wang, Author3</div>
-            <div class="paper-venue">Venue, Year</div>
-        </div>
-        -->
+        <p><em>Coming soon.</em></p>
     </section>
 
     <section>
-        <h2>Selected Projects</h2>
+        <h2>Research &amp; Projects</h2>
+
+        <div class="project">
+            <div class="project-title">4D Cardiac MRI Segmentation (ST-ACDC-Net)</div>
+            <div class="project-meta">Medical Image Analysis &mdash; 2026 &ndash; Present</div>
+            <div class="project-desc">
+                Developing a spatio-temporal attention network for 4D cardiac MRI dynamic segmentation. Built upon 3D TransUNet and CA-Net architectures, trained on the CAMUS 4-chamber dataset. Involves multi-round training pipelines with comprehensive evaluation of segmentation metrics.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">BLE-Based Real-Time Asset Tracking with LLM-Assisted Diagnosis</div>
+            <div class="project-meta">Final Year Project, BNBU &mdash; 2026 &ndash; Present</div>
+            <div class="project-desc">
+                Designing an indoor asset tracking system using BLE RSSI fingerprinting combined with LLM-assisted signal anomaly diagnosis. The system includes real-time localization, a web dashboard for visualization, and an LLM module for calibration suggestions and natural-language explanations of tracking failures (human body blockage, multipath, beacon displacement).
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Competition Arrow Performance Evaluation &amp; Intelligent Selection</div>
+            <div class="project-meta">Olympic Key Research Program (China Institute of Sport Science) &mdash; June 2025 &ndash; Present</div>
+            <div class="project-desc">
+                Contributing to the Olympic key project &ldquo;Smart Arrow Selection Equipment and System R&amp;D&rdquo; for LA 2028 preparation. Operated high-speed camera setups for arrow release analysis, extracted kinematic factors (release angle, velocity) linked to impact scores, and applied computer vision trajectory tracking to quantify arrow straightness.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Flood Forecasting &amp; Hydrological Modelling</div>
+            <div class="project-meta">UIC &ndash; Sun Yat-sen University &ndash; Huawei Collaboration &mdash; Sept 2025 &ndash; Present</div>
+            <div class="project-desc">
+                Processed remote-sensing imagery for hydrological modelling and built an ML pipeline to predict station discharge from spatiotemporal features. Contributed to the land-surface runoff component and integrated data and ML outputs for flood forecasting experiments.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">RGB-D Cargo Height Estimation (CGF-Height)</div>
+            <div class="project-meta">Mobile Deployment &mdash; 2026</div>
+            <div class="project-desc">
+                Developed a mobile-friendly RGB-D depth-based cargo height estimation system using center-guided segmentation and local ground-aware fusion (CGF-Height). Designed for real-time deployment on mobile devices with a HeightScanner API.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Honors &amp; Awards</h2>
         <ul>
-            <li><strong>4D Cardiac MRI Segmentation</strong> &mdash; Deep learning pipeline for volumetric cardiac analysis.</li>
-            <li><strong>Indoor Localization via BLE + LLM</strong> &mdash; FYP project combining Bluetooth beacons with language models.</li>
-            <li><strong>RGB-D Height Estimation</strong> &mdash; Mobile-friendly depth-based height prediction.</li>
+            <li>Mathematical Contest in Modeling (MCM/ICM) &mdash; <strong>Meritorious Winner</strong>, 2025</li>
+            <li>ICBC Cup Business Competition &mdash; Excellence Award</li>
         </ul>
     </section>
 
     <section>
         <h2>Skills</h2>
-        <p><strong>Languages:</strong> Python, TypeScript, C++, LaTeX, R<br>
-        <strong>Frameworks:</strong> PyTorch, Next.js, OpenCV, Prisma<br>
-        <strong>Tools:</strong> Git, Docker, Jupyter, WireGuard</p>
+        <p>
+            <strong>Programming:</strong> Python, Java, C, SQL, LaTeX<br>
+            <strong>Frameworks:</strong> PyTorch, OpenCV, Jupyter<br>
+            <strong>Tools:</strong> Git/GitHub, LaTeX, Docker
+        </p>
     </section>
 
     <footer>
-        &copy; 2025 Zhengyang Wang. Last updated: 2025-05.
+        &copy; 2026 Zhengyang Wang. Last updated: May 2026.
     </footer>
 
 </div>
